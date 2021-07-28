@@ -63,12 +63,8 @@ def start(message):
     else:
         keyboard = types.InlineKeyboardMarkup(row_width=1)
         b1 = types.InlineKeyboardButton(text='Все заявки', callback_data='AllClaims')
-        b2 = types.InlineKeyboardButton(text='Отправить сообщение 1 человеку', callback_data='SendMessageOne')
-        b3 = types.InlineKeyboardButton(text='Отправить сообщение всем', callback_data='SendMessageAll')
-        b4 = types.InlineKeyboardButton(text='Рекламное сообщение', callback_data='SendAdvertisement')
-        b5 = types.InlineKeyboardButton(text='Создать мероприятие', callback_data='CreateEvent')
-        b6 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
-        keyboard.add(b1, b2, b3, b4, b5, b6)
+        b2 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
+        keyboard.add(b1, b2)
         bot.send_message(message.chat.id,
                          'Вот функции админа. Хотите посмотреть функции бота, нажмите «Другие функции»', reply_markup=keyboard)
 
@@ -175,11 +171,8 @@ def callback_inline(call):
             else:
                 keyboard = types.InlineKeyboardMarkup(row_width=1)
                 b1 = types.InlineKeyboardButton(text='Все заявки', callback_data='AllClaims')
-                b2 = types.InlineKeyboardButton(text='Отправить сообщение 1 человеку', callback_data='SendMessageOne')
-                b3 = types.InlineKeyboardButton(text='Отправить сообщение всем', callback_data='SendMessageAll')
-                b4 = types.InlineKeyboardButton(text='Рекламное сообщение', callback_data='SendAdvertisement')
-                b5 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
-                keyboard.add(b1, b2, b3, b4, b5)
+                b2 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
+                keyboard.add(b1, b2)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                       text='Вот функции админа.'
                                            '\nХотите посмотреть функции бота, нажмите «Другие функции»',
@@ -197,11 +190,8 @@ def callback_inline(call):
             else:
                 keyboard = types.InlineKeyboardMarkup(row_width=1)
                 b1 = types.InlineKeyboardButton(text='Все заявки', callback_data='AllClaims')
-                b2 = types.InlineKeyboardButton(text='Отправить сообщение 1 человеку', callback_data='SendMessageOne')
-                b3 = types.InlineKeyboardButton(text='Отправить сообщение всем', callback_data='SendMessageAll')
-                b4 = types.InlineKeyboardButton(text='Рекламное сообщение', callback_data='SendAdvertisement')
-                b5 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
-                keyboard.add(b1, b2, b3, b4, b5)
+                b2 = types.InlineKeyboardButton(text='Другие функции', callback_data='StartAdmin')
+                keyboard.add(b1, b2)
                 bot.send_message(call.message.chat.id, 'Вот функции админа.'
                                            '\nХотите посмотреть функции бота, нажмите «Другие функции»',
                                       reply_markup=keyboard)
