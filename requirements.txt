@@ -3,6 +3,8 @@ beautifulsoup4==4.9.3
 bs4==0.0.1
 certifi==2020.12.5
 chardet==4.0.0
+charset-normalizer==2.0.3
+colorama==0.4.4
 Cython==0.29.23
 DateTime==4.3
 idna==2.10
@@ -22,6 +24,7 @@ python-telegram-bot==13.4.1
 python-telegram-bot-calendar==1.0.5
 PyTweening==1.0.3
 pytz==2021.1
+qrcode==7.2
 requests==2.25.1
 selenium==3.141.0
 six==1.15.0
